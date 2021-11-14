@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./order-details.css">
+    <title>F1Studioz | Assignment</title>
+</head>
+<body>
+    <nav class="d-lg-flex d-none justify-content-between align-items-center px-3 position-relative">
+        <div id="logo" class="m-2">
+            <img src="./img/white-logo.png" alt="f1Studioz-logo-icon">
+        </div>
+        <div id="nav-icons m-2">
+            <img src="./img/menuIcon.png" alt="" class="mx-2">
+            <img src="./img/notificationIcon.png" alt="" class="mx-2">
+            <img src="./img/ques-mark.png" alt="" class="mx-2">
+            <img src="./img/face.png" alt="" class="mx-2">
+        </div>
+    </nav>
+
+    <!-- header-->
+    <div class="d-flex justify-content-between align-items-center navigation-tab px-5 position-sticky">
+        <div>
+             <i class="fa fa-arrow-left go-back"></i> Garage Door Install <span class="mx-2">PO# 62433078</span> </div>
+        <div>
+            <i class="fas fa-ellipsis-v"></i>
+        </div>
+    </div>
+    <div id="orderDetails" class="container d-flex flex-column align-items-between">
+        <div id="order-contact" class="d-flex justify-content-between align-items-md-center align-items-start p-3 p-sm-4 px-sm-5 mt-2 flex-column flex-md-row">
+            <div>
+                <strong>Mr. Bement Jared</strong><br>
+                <span class="fw-light">144 Curt Shores, 50, Madison Avenue,<br>Hixson 42040</span>
+            </div>
+            <div class="d-flex justify-content-around justify-content-sm-end mx-0 px-0 w-100 w-sm-auto mt-2">
+                <div>
+
+                    <button class="btn my-button-outline text-capitalize mx-sm-1"><i class="fas fa-phone-alt"></i> call</button>
+                </div>
+                <div>
+
+                    <button class="btn my-button-outline text-capitalize mx-sm-1"><i class="fas fa-envelope"></i> email</button>
+                </div>
+                <div>
+                    <button class="btn my-button-outline text-capitalize mx-sm-1"><i class="fas fa-map-marker-alt"></i> directions</button>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="orderStatus" class="d-flex flex-column p-4 mt-2">
+            
+            <div class="d-flex overflow-auto">
+                <div class="flex-grow-1 px-3 px-sm-0 text-center color-blue fw-bold active-tab"><span class="pb-2 d-inline-block">Summary</span></div>
+                <div class="flex-grow-1 px-3 px-sm-0 text-center color-blue"><span class="pb-2 d-inline-block">Product Specs</span></div>
+                <div class="flex-grow-1 px-3 px-sm-0 text-center color-blue"><span class="pb-2 d-inline-block">Documents</span></div>
+                <div class="flex-grow-1 px-3 px-sm-0 text-center color-blue"><span class="pb-2 d-inline-block">Notes</span></div>
+                <div class="flex-grow-1 px-3 px-sm-0 text-center color-blue"><span class="pb-2 d-inline-block">Images</span></div>
+            </div>
+            
+            <div class="d-flex flex-column py-2 px-5">
+                <div class="status my-3">
+                    <strong>Order Received</strong><br>
+                    <span class="fw-light">Order received date: 12/27/2018</span>
+                </div>
+                <div class="status my-3">
+                    <strong>On Order</strong><br>
+                    <span class="fw-light">Scheduled for manufacturing</span>
+                </div>
+                <div class="status my-3">
+                    <strong>Shipment Tracker</strong><br>
+                    <span class="fw-light">Delivered on Mon, 12/28/2018</span>
+                </div>
+                <div class="active-status status my-2 p-4">
+                    <p><strong>Delievery</strong></p>
+                    <label for="reasonChoose" class="form-label ">Reason to rechedule</label>
+                    <select class="form-select" aria-label="Default select example" id="reasonChoose">
+                        <option selected>Select a reason</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                     </select>
+                     <br>
+                    <label for="chooseDate" class="form-label ">Schedule Date and Time</label>
+                    <div class="d-flex flex-column flex-sm-row gap-2">
+                        <input type="date" name="chooseDate" id="chooseDate" class="form-control mx-1" value="2021-10-20">
+                        <input type="time" name="chooseDate" id="chooseDate" class="form-control mx-1" value="12:00">
+                        <input type="time" name="chooseDate" id="chooseDate" class="form-control mx-1" value="13:00">
+                    </div>
+                    <div class="d-flex mt-2">
+                        <button class="btn btn-success my-button">CONFIRM</button>
+                        <button class="btn">+ ADD NOTE</button>
+                    </div>
+                </div>
+
+                <div class="status my-3">
+                    <strong>Shipment Tracker</strong><br>
+                    <span class="fw-light">Delivered on Mon, 12/28/2018</span>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>

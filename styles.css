@@ -1,0 +1,129 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+*{
+ box-sizing: border-box;   
+}
+body{
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+}
+nav{
+    height: 64px;
+    background-color: #000000;
+}
+#my-row{
+    
+    margin: 0;
+    overflow: auto;
+}
+#logo{
+    width: auto;
+    height: 50px;
+    cursor: pointer;
+}
+#logo img{
+    height: 100%;
+}
+.navigation-tab{
+    height: 48px;
+    background-color: #34495E;
+    color: white;
+}
+
+.navigation-tab .my-order{
+    border-bottom: 4px solid #FBCB07;
+}
+.navigation-tab .whats-new{
+    border-bottom: 4px solid transparent;
+    /* opacity: 0.8; */
+}
+
+.navigation-tab #counter{
+    margin-left: 8px;
+    opacity: 1;
+    border-radius: 50%;
+    background-color: #FBCB07;
+    height: 18px;
+    width: 18px;
+}
+
+.lorem-ipsum-nav {
+    width: 194px;
+    height: 34px;
+}
+.lorem-ipsum-nav img{
+    height: 100%;
+    width: auto;
+}
+
+.search-bar div{
+    max-width: 400px;
+}
+
+.compliant{
+    width: 90px;
+    height: 20px;
+    background-color:#1ABC6B33;
+    color: #17A85F;
+    font-size: 12px;
+    text-align: center;
+    vertical-align: center;
+    border-radius: 10px;
+}
+
+
+.accordion-list{
+    list-style-type: none;
+}
+.accordion-list-item{
+    border: 1px solid rgba(168, 168, 168, 0.274);     
+    border-radius: 10px;
+    height: 54px;
+    cursor: pointer;
+}
+.accordion-bg-blue{
+    background: #0091FF14;
+}
+.accordion-button{
+    background: #E7E9EB;
+    color: black !important;
+}
+.accordion-button:not(.collapsed){
+    background: #E7E9EB !important;
+
+}
+
+table{
+    font-size: 14px;
+}
+
+
+#filter-btn{
+    background: #FFFFFF;
+    
+    border-radius: 4px;
+}
+
+.title{
+    color: #34495E;
+
+}
+
+.po-number{
+    cursor: pointer;
+}
+
+
+#order-details-mobile{
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    overflow: auto;
+}
+
+.mobile-header{
+    background-color: #34495E;
+    color: white;
+}
+.go-back{
+    cursor: pointer;
+}
