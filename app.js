@@ -1,4 +1,4 @@
-const poNumbers=document.querySelectorAll('.po-number');
+const poNumbers=document.querySelectorAll('#orderList tr');
 const logo=document.querySelector('#logo');
 const accordionListItems=document.querySelectorAll('.accordion-list-item');
 const orderCards=document.querySelectorAll('.order-card');
