@@ -108,8 +108,17 @@ table{
 
 }
 
-.po-number{
+#orderList tr{
     cursor: pointer;
+}
+#orderList tr:hover{
+    background-color: #FBCB07;
+}
+#orderList tr:first-of-type{
+    cursor: default;
+}
+#orderList tr:first-of-type:hover{
+    background-color: transparent;
 }
 
 
